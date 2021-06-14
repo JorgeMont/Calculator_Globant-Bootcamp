@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <article class="calc-container">
+      <h1 class="app-name">Calculator</h1>
+      <div class="screen-container">
+        <input type="text" id="screen" readonly />
+      </div>
+      <div class="numpad">
+        <button class="numpad__button" id="seven" value="7">7</button>
+        <button class="numpad__button" id="eight" value="8">8</button>
+        <button class="numpad__button" id="nine" value="9">9</button>
+        <button
+          class="numpad__button numpad__button--operator"
+          id="del"
+          value="del"
+        >
+          DEL
+        </button>
+        <button class="numpad__button" value="4">4</button>
+        <button class="numpad__button" value="5">5</button>
+        <button class="numpad__button" value="6">6</button>
+        <button class="numpad__button" value="+">+</button>
+        <button class="numpad__button" value="1">1</button>
+        <button class="numpad__button" value="2">2</button>
+        <button class="numpad__button" value="3">3</button>
+        <button class="numpad__button" value="-">-</button>
+        <button class="numpad__button" value=".">.</button>
+        <button class="numpad__button" value="0">0</button>
+        <button class="numpad__button" value="/">/</button>
+        <button class="numpad__button" value="x">x</button>
+        <button
+          class="numpad__button numpad__button--operator"
+          id="reset"
+          value="reset"
+        >
+          RESET
+        </button>
+        <button class="numpad__button numpad__button--result" value="=">
+          =
+        </button>
+      </div>
+    </article>
+    <script src="app.js"></script>
+  </body>
+</html>

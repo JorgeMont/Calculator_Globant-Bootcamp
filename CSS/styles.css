@@ -1,0 +1,95 @@
+:root {
+  --light-background: #ffff;
+  --light-font: #373e47;
+  --light-blue: #f4fdfb;
+  --blue-turq: #18d4a3;
+  --operation-key: #212b41;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a2caba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article.calc-container {
+  background-color: var(--light-blue);
+  color: var(--light-font);
+  font-family: "Baloo Tammudu 2", cursive;
+  border-radius: 15px;
+  margin: 3rem auto;
+  padding: 0.5rem;
+  width: 20rem;
+  height: auto;
+}
+
+.calc-container h1 {
+  margin: 1rem;
+}
+
+.screen-container {
+  width: 100%;
+  margin: 5% 0;
+  height: 10vh;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen-container input {
+  background-color: var(--light-blue);
+  width: 90%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+  text-align: right;
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "Baloo Tammudu 2", cursive;
+  color: var(--light-font);
+}
+
+.numpad {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  background-color: var(--light-background);
+  border-radius: 0 15px;
+}
+
+.numpad__button {
+  flex: 1 0 20%;
+  font-family: "Baloo Tammudu 2", cursive;
+  font-size: 1.5rem;
+  color: var(--light-font);
+  border: none;
+  margin: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.numpad__button:hover {
+  cursor: pointer;
+}
+
+.numpad__button.numpad__button--result {
+  background-color: var(--blue-turq);
+  color: white;
+}
+
+.numpad__button.numpad__button--operator {
+  background-color: var(--operation-key);
+  color: var(--blue-turq);
+}
