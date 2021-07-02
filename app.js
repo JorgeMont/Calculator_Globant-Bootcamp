@@ -1,8 +1,14 @@
 const buttons = document.querySelectorAll(".numpad__button");
 const screen = document.getElementById("screen");
 
+let resultIsDisplayed = false;
+
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
+    if (resultIsDisplayed) {
+      screen.value = "";
+      resultIsDisplayed = false;
+    }
     switch (button.value) {
       case "del":
         // Deletes value
@@ -28,6 +34,7 @@ buttons.forEach((button) => {
         } catch {
           screen.value = "Invalid operation";
         }
+        resultIsDisplayed = true;
         break;
       default:
         //Gets numbers
